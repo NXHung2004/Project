@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Project.Models;
 
 namespace Project.Modes
 {
@@ -6,6 +7,6 @@ namespace Project.Modes
     {
         public DatabaseContext(DbContextOptions options):base(options) { }
 
-        public DbSet<product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
